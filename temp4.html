@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+    .card4{
+        height: 311px;
+        background: #FFFFFFBA;
+        margin:10px;
+        padding: 20px;
+    }
+    .rcardcontainer {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 103%;
+        margin-left: -20px;
+        background: #5E93AA;
+        height: 80px;
+        display: flex;
+        flex: 1;
+
+    }
+
+    .rcard {
+        display: inline-block;
+        background: #ED3237;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 20px;
+        width: 256px;
+        margin:10px;
+    }
+
+    .rcardcontainer .rcard label {
+        font-size: 18px;
+        color: white;
+        font-family: 'Roboto';
+        font-style: normal;
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+
+    .marb-10 {
+        margin-bottom: 10px;
+    }
+    .cardhead{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .basiccardtitle {
+        width: 108.39px;
+        height: 27.76px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        font-weight:400;
+        color: black;
+    }
+    .iconstyle{
+        margin-top: -15px;
+        margin-right: -15px;
+        margin-left: auto;
+    }
+    .cardcontent{
+       font-weight: 300;
+       font-style: normal;
+       font-size: 14px;
+       line-height: 16px;
+       color: black;
+       text-transform: capitalize;
+    }
+    .myscroll{
+        box-shadow: inset 4px -5px 20px 0px #3b3b3b;
+    }
+    .back-btn{
+        margin-right:10px;
+        position: absolute;
+        height: 65px;
+        width:100px;
+        left: -10px;
+        background:#5E93AA;
+        padding: 20px;
+        box-shadow: 1px 0px 9px;
+    }
+    .outer-main{
+        background: url('indus.png') no-repeat;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+    .inner-main{
+        display: flex;flex-direction: row;flex-wrap: wrap;
+    }
+    .fitst-card-only{
+        margin-left: 100px;
+    }
+    .text-center.back-btn:active{
+        box-shadow: 0px 0px 0px;
+    }
+    .card4-label2{
+        font-weight: 300;
+        height: 16px;
+        font-style: normal;
+        font-family: 'Roboto';
+        font-size: 14px;
+        color: black;
+    }
+    
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="myscript.js"></script>
+
+<body ng-app="template_app" ng-controller="togelcontroller">
+    
+    <div class="outer-main">
+        <div class="inner-main">
+            <div style="width: 60%;" class="card4">
+                <div class="marb-10 cardhead">
+                    <label class="basiccardtitle">Problem</label>
+                    <img src="problem.png" width="43px" height="43px" class="iconstyle">
+                </div>
+                <div style="width: 90%;" class="cardcontent" ng-show="study1">
+                    Client wanted to replace manual MIS work
+                    and also provide insights on the reporting.
+
+                    They wanted to replace their manual reporting with
+                    an automated & smart solution
+                </div>
+                <div style="width: 90%;" class="cardcontent" ng-show="study2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam blanditiis in doloremque ipsa ullam eligendi labore omnis ducimus commodi, odit consectetur dolorem provident harum explicabo recusandae similique, ratione voluptates nihil reprehenderit consequuntur atque eius cupiditate? Ullam quod, sapiente corporis sit perspiciatis eius, numquam placeat et amet inventore velit eum odit esse! Quasi, nisi! Tempore magni omnis modi provident fuga, harum placeat. Commodi, odio mollitia. Sunt sequi delectus eligendi nam provident velit aperiam ipsam laboriosam sapiente. Autem vitae minus rerum laudantium error animi ea, voluptatem voluptates velit consequuntur recusandae voluptatum dolorum, magnam hic libero nostrum esse, quibusdam quis fugit nihil incidunt!
+                </div>
+                <div style="width: 90%;" class="cardcontent" ng-show="study3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit odio ea, temporibus sint pariatur repellendus aut itaque eos odit exercitationem. Eos laborum iste, voluptatem error veniam tempora! Temporibus doloremque inventore incidunt, repellat ducimus laboriosam rerum fuga sed vel amet, voluptatibus libero voluptates perferendis explicabo quam voluptatem ea itaque obcaecati nesciunt, fugit odit consectetur. Repellendus harum laborum nulla quos distinctio adipisci iure consequuntur magni! Quasi natus reiciendis recusandae optio fugit odio veniam, eum architecto suscipit nihil nemo eos laudantium libero magnam eligendi deleniti id explicabo. Voluptas architecto totam quisquam tempore magni, ex, in quibusdam repellat doloribus quam quia delectus repellendus aliquam molestiae a iusto provident molestias accusantium reiciendis obcaecati quae exercitationem perferendis veniam temporibus! Minus quas laborum dolorem vitae explicabo unde!
+                </div>
+                <div style="width: 90%;" class="cardcontent" ng-show="study4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur, itaque unde consequuntur earum id et eaque porro nam officia exercitationem laborum eligendi nisi provident excepturi. Corporis porro, iusto perspiciatis commodi et odit rem eius, saepe optio eveniet vel, alias quidem. Minus quis eveniet esse nostrum qui numquam dolores tenetur repudiandae reiciendis rerum voluptates similique culpa nemo molestiae autem assumenda consequatur, dolorem delectus quos dignissimos, quasi velit distinctio porro libero! Qui neque quaerat magni temporibus et placeat cupiditate autem, labore molestias necessitatibus. Quam, iure. Non eaque dolore itaque nam voluptas, dolorum vero iusto optio! Est eveniet ipsam veniam unde reiciendis, blanditiis incidunt? Qui inventore quam optio? Numquam voluptatum qui architecto magni excepturi nulla labore adipisci, neque autem consequuntur rem id repellendus sapiente dolorem nemo alias quam facilis quisquam officiis nostrum.
+                </div>
+                <div style="width: 90%;" class="cardcontent" ng-show="study5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam labore sit fuga eligendi! Repellendus temporibus optio fugiat quidem, deserunt, omnis tenetur magni quaerat repudiandae enim commodi excepturi? Pariatur officia deleniti possimus, nulla error quis aperiam amet expedita debitis nihil, consequuntur fuga? Voluptas, perferendis! Voluptate autem tempora cumque dolore dolores libero ut hic adipisci excepturi provident asperiores, itaque veniam quibusdam, nemo assumenda officiis et veritatis a in. Enim magni, dicta eligendi quo assumenda explicabo, odio praesentium necessitatibus dolor repellendus a soluta quod, voluptates eum omnis aperiam animi. Quaerat ipsum suscipit dolores harum recusandae unde, eveniet commodi, ullam veritatis sed deleniti iure quae tempora similique iste blanditiis quo excepturi cum sit ratione nisi nam enim animi distinctio! Dicta pariatur officia animi, perspiciatis sed non porro ullam repudiandae tenetur possimus quis dolore. Voluptatibus neque cumque assumenda beatae optio ex sit ipsam aliquid fugiat.
+                </div>
+
+            </div>
+            <div style="width: 36%;" class="card4">
+                <div class="marb-10 cardhead" >
+                    <label class="basiccardtitle">Approach</label>
+                    <img src="solution.png" width="43px" height="43px" class="iconstyle">
+                </div>
+                <div class="cardcontent" ng-show="study1">
+                    Integration of raw data and performing multiple
+                    transformation and mappings to create different
+                    reports
+                    
+                    Customization and beautification of Reports
+                    
+                    Send Email with NLP based insights as the data
+                    gets updated
+                    
+                    Automating the whole process from integration to
+                    sending MIS as an email
+                </div>
+                <div class="cardcontent" ng-show="study2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias placeat obcaecati enim aperiam magnam sint sunt consequuntur nobis, ad illum repellat, aliquam hic ex rem maxime nemo eaque debitis odio, nisi accusantium unde? Reprehenderit sed illo, aliquam perspiciatis maxime nulla distinctio, rerum doloribus consequuntur dolor repellendus autem laboriosam voluptatum, cumque quae natus eveniet temporibus quo! Culpa cumque facilis at! Laboriosam rerum a laudantium numquam commodi, distinctio excepturi quasi nulla quibusdam praesentium! Iure, quam assumenda consectetur ex odit nam nisi iste, delectus impedit beatae praesentium! Illum doloremque dicta voluptatibus id voluptate assumenda sunt modi, a quod inventore architecto, enim veniam consequuntur!
+                </div>
+                <div class="cardcontent" ng-show="study3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum molestiae ipsum suscipit non, blanditiis nobis, rem quae tempora eum ipsa. Porro consequuntur odit temporibus dolores ipsa nobis doloribus eveniet commodi provident minima, quisquam blanditiis vero odio neque possimus, ea fugiat incidunt ex, inventore ad rem vel quibusdam! Doloribus sit tenetur, eaque, quod ducimus nisi ut reiciendis vero aliquam obcaecati deleniti praesentium rem repellendus quia asperiores mollitia odit necessitatibus!
+                </div>
+                <div class="cardcontent" ng-show="study4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ipsa dolore illum fuga optio beatae, maxime facere voluptatibus sunt, impedit dolorum eaque amet iure quis minus eveniet assumenda ab aperiam debitis tempore autem earum molestiae ipsum eos. Dolore, dignissimos! Rem dignissimos delectus ullam iure, ea ratione nostrum voluptate. Nulla repellat, deleniti minus dolorem beatae consectetur magni sequi delectus dolorum dicta.
+                </div>
+                <div class="cardcontent" ng-show="study5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem dicta facilis consequatur possimus rerum repellat fuga a? Distinctio, magnam! Distinctio, dignissimos, natus est tempora veritatis ea numquam quasi ducimus fugiat beatae aut accusantium iusto, consequatur incidunt dolor! Doloribus hic delectus quasi rerum minima. Doloribus, quas fuga deleniti laudantium modi in quod. Quasi corrupti officiis possimus ullam vero, illum mollitia nisi incidunt id odio ab sed reprehenderit, maxime non! Nesciunt, modi. Minima atque unde enim labore, impedit officiis sit aperiam praesentium facere fugit quisquam qui, hic suscipit molestias eos explicabo accusantium, dolore alias? Vero molestias at culpa harum minus natus, cum ab quidem perferendis voluptatem voluptates error reprehenderit necessitatibus tempora.
+                </div>
+
+            </div>
+            <div style="width: 46%;" class="card4">
+                <div class="marb-10 cardhead">
+                    <label class="basiccardtitle">Solution</label>
+                    <img src="clipboard.png" width="43px" height="43px" class="iconstyle">
+                </div>
+                <div class="cardcontent" ng-show="study1">
+                    
+                    Automated custom formatted MIS reports along with customized NLP based insights which can be
+                    either downloaded or directly
+                    mailed using our tool.
+                    
+                    Trend insights, performance insights, relationship insights based on different levels that gets
+                    generated automatically as t he data is
+                    updated.
+                    
+                    The manual process of MIS was completely replaced by an automated solution on Cloud. G Square
+                    installed its tool Narrator which
+                    now enables the Client to get automation of the MIS & Dashboarding for their various hotel
+                    property clients
+                    
+                    The automated NLP based insights and analytics reports are sent through emails to the client
+                    twice a day
+                </div>
+                <div class="cardcontent" ng-show="study2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium possimus eius aspernatur optio libero distinctio quo consequuntur doloremque cumque in minima labore, nihil doloribus eveniet, unde culpa quae dolorem exercitationem voluptate esse explicabo quas ipsam. Atque ullam, voluptatibus magni quia et a autem vitae quisquam, voluptatum, vel rerum dolor dolores! Est fuga cumque, dolore nulla ad harum accusamus distinctio ducimus perferendis modi, enim pariatur reiciendis suscipit ipsa ipsam expedita quisquam mollitia eligendi illo unde quaerat saepe et. Provident totam, sequi reiciendis architecto nulla repudiandae id? Odio doloremque voluptatum cum necessitatibus quae optio ullam, dolore praesentium eum quis quo nam dicta!
+                </div>
+                <div class="cardcontent" ng-show="study3">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ea rem commodi eligendi quia praesentium dolores necessitatibus nihil eius modi voluptatibus, officiis cumque est alias ex distinctio dicta tenetur provident suscipit quam quae! Magni, debitis blanditiis dolor commodi recusandae, veniam odit voluptas at expedita excepturi dolorem incidunt iste qui temporibus. Iusto quam atque eaque natus aliquid provident sit, animi sapiente quibusdam repellat dolor corporis sed illo necessitatibus deleniti magni quidem fuga. Enim dolor voluptate corrupti assumenda quis quasi aperiam? Eligendi dolorem dolore, accusamus voluptates blanditiis illum ea. Ad libero earum maiores assumenda enim ut perferendis aliquid molestiae, accusamus ducimus iusto architecto sint tenetur a. Consequuntur cupiditate fugit ab, adipisci accusamus vitae ipsam necessitatibus veniam cumque provident praesentium id dicta quia!
+                </div>
+                <div class="cardcontent" ng-show="study4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quod commodi, culpa unde quasi impedit quaerat autem! Repudiandae sunt voluptate est aspernatur odit nam tempora quas fuga doloremque, iste porro consequuntur, veritatis aliquam totam voluptates quaerat saepe necessitatibus. Quia voluptas voluptates voluptatibus ipsum architecto enim deleniti ex, est, cumque assumenda voluptatum, eos saepe libero ipsa optio expedita consectetur quasi facilis adipisci at quo? Eum accusantium nostrum totam, corporis tenetur, odio facilis, perspiciatis sequi fuga quia quo beatae! Labore, ullam. Adipisci ut dolores labore cupiditate explicabo suscipit, veritatis consequatur dignissimos eum, obcaecati, doloribus cumque laborum repudiandae reprehenderit corrupti modi quam. Vitae nemo repudiandae atque temporibus impedit nihil illum maiores vero soluta.
+                </div>
+                <div class="cardcontent" ng-show="study5" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta dolorum id nostrum eius necessitatibus blanditiis vitae, qui nesciunt perspiciatis dolor sint esse molestias laboriosam et corrupti sunt maiores? Accusamus, minima voluptas quisquam similique iure fuga delectus eum veniam? Labore deserunt eos quasi fugit ullam rerum, cum, recusandae voluptas perspiciatis veniam aut ipsum, accusantium quae ratione odit! Inventore nobis ipsam, qui earum cum voluptates, blanditiis debitis id sapiente tempore tempora amet nam aspernatur accusamus recusandae aut iste corporis eos distinctio sit sunt quas. Provident asperiores aliquam assumenda eos nihil. Tempora, neque. Enim doloribus deleniti unde illum officia omnis eius veritatis! Aspernatur quia temporibus reiciendis fugit consectetur consequatur porro minima, odit repellat inventore distinctio. Possimus labore, voluptatum esse laborum corporis voluptates officiis distinctio sit! A, tenetur maxime.
+                </div>
+
+            </div>
+            <div style="width: 50%;" class="card4">
+                <div class="marb-10 cardhead" >
+                    <label class="basiccardtitle"> Output </label>
+                    <img src="report.png" width="43px" height="43px" class="iconstyle">
+                </div>
+                <div class="cardcontent" style="margin-bottom: 10px;">
+                    <label ng-show="study1" class="card4-label2">target Collection after Implementing Narrator1</label>
+                    <label ng-show="study2" class="card4-label2">target Collection after Implementing Narrator2</label>
+                    <label ng-show="study3" class="card4-label2">target Collection after Implementing Narrator3</label>
+                    <label ng-show="study4" class="card4-label2">target Collection after Implementing Narrator4</label>
+                    <label ng-show="study5" class="card4-label2">target Collection after Implementing Narrator5</label>
+                </div>
+                <div style="display: flex;">
+                    <div style="display: inline-block;">
+                        <img ng-show="study1" src="graph.png" width=372px height="205px" />
+                        <img ng-show="study2" src="graph2.png" width=372px height="205px" />
+                        <img ng-show="study3" src="graph3.jpg" width=372px height="205px" />
+                        <img ng-show="study4" src="graph4.jpeg" width=372px height="205px" />
+                        <img ng-show="study5" src="graph5.png" width=372px height="205px" />
+
+                    </div>
+                    <div style="display: inline-block;margin-left: 27px;" >
+                        <label ng-show="study1" class="cardcontent">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </label>
+                        <label ng-show="study2" class="cardcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate odio, voluptas sit earum doloremque, delectus cumque ipsa officiis doloribus, culpa a? Rem dolor reiciendis nisi omnis illo vitae laboriosam quod error, velit pariatur iste itaque nemo repudiandae ut quisquam! Itaque labore illum quaerat, inventore maxime consequuntur qui illo optio? </label> 
+                        <label ng-show="study3" class="cardcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolore aspernatur mollitia consequatur maxime, corporis error impedit voluptatem saepe ipsa numquam veniam neque quidem perferendis fugiat ducimus quibusdam obcaecati adipisci. </label> 
+                        <label ng-show="study4" class="cardcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio nam accusantium alias, ea exercitationem dolor beatae iure. Expedita iure eligendi reprehenderit sit temporibus. Debitis totam aspernatur at cumque voluptates dolores alias, qui vel perspiciatis quas, mollitia fugit commodi labore.</label> 
+                        <label ng-show="study5" class="cardcontent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum sint illo in inventore ducimus voluptatibus eum corrupti saepe illum. Reprehenderit odit distinctio quasi impedit. Corporis expedita sint id totam delectus, natus facere perferendis saepe rerum minus blanditiis sequi, nulla fugit recusandae commodi quo! </label> 
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="rcardcontainer myscroll">
+            <div style="display: flex;align-items: center;">
+                <div class="text-center back-btn" ng-click="apply_back();">
+                    <img src="back.png" width="35px" height="26px"/>
+                </div>
+                <div class="rcard text-center fitst-card-only" ng-click="apply_study1();">
+                    <label>study1</label>
+                </div>
+                <div class="rcard text-center" ng-click="apply_study2();">
+                    <label>study2 : Name</label>
+                </div>
+                <div class="rcard text-center" ng-click="apply_study3();">
+                    <label>study3</label>
+                </div>
+                <div class="rcard text-center" ng-click="apply_study4();">
+                    <label>study4</label>
+                </div>
+                <div class="rcard text-center" ng-click="apply_study5();">
+                    <label>study5</label>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
